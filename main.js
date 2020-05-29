@@ -34,10 +34,6 @@ function evalResult(){
   }
 }
 
-document.addEventListener('keydown', function(e){
-  if(e.code == 'Enter') evalResult();
-})
-
 function everyClear(){
   calc.input.value = '';
 }
@@ -86,4 +82,9 @@ function addElement(){
   calc.input.value += this.value;
 }
 
-
+document.addEventListener('keydown', function(e){
+  e.preventDefault();
+  if(e.code == 'Enter') evalResult();
+  if(e.code == 'Backspace') back();
+  if(e.code == 'KeyC') everyClear();
+})
