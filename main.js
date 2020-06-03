@@ -26,7 +26,7 @@ if(sign.value == '='){
 }
 
 
-function evalResult(){
+function evalResult(){  
   if(isNaN(eval(calc.input.value)) || eval(calc.input.value) == undefined || eval(calc.input.value) == null){
     alert('Введите числовое выражение')
   } else {
@@ -88,7 +88,7 @@ function addElement(e){
 
 document.addEventListener('keydown', function(e){
   e.preventDefault();
-  if(e.code == 'Enter') evalResult();
+  if(e.code == 'Enter' || e.key == '=') evalResult();
   if(e.code == 'Backspace') back();
   if(e.code == 'KeyC') everyClear();
   if(e.key == '0') addElement(0);
