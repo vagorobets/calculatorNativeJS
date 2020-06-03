@@ -10,3 +10,5 @@ https://github.com/vagorobets
   - Добавлены основные математические функции;
   - Адаптиваная верстка;
   - Использование чистого JS;
+
+[![vagorobets|](https://i.imgur.com/ZJDCEwj.png)](https://vagorobets.github.io/calculatorNativeJS/)
