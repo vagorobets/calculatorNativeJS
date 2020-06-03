@@ -2,29 +2,39 @@ let signs = document.querySelectorAll('.sign');
 let input = document.querySelector('#input');
 
 for(let sign of signs){
-if(sign.value == '='){
-  sign.addEventListener('click', evalResult);
-} else if(sign.value == 'C'){
-  sign.addEventListener('click', everyClear);
-} else if(sign.value == 'x!'){
-  sign.addEventListener('click', factorial);
-} else if(sign.value == 'log'){
-  sign.addEventListener('click', log);
-} else if(sign.value == '<'){
-  sign.addEventListener('click', back);
-} else if(sign.value == '1/x'){
-  sign.addEventListener('click', split);
-} else if(sign.value == 'x²'){
-  sign.addEventListener('click', sqrt);
-} else if(sign.value == '√'){
-  sign.addEventListener('click', radic);
-} else if(sign.value == '±'){
-  sign.addEventListener('click', plusmin);
-} else {
-  sign.addEventListener('click', addElement);
+  switch(sign.value){
+    case '=':
+    sign.addEventListener('click', evalResult);
+    break;
+    case 'C':
+    sign.addEventListener('click', everyClear);
+    break;
+    case'x!':
+    sign.addEventListener('click', factorial);
+    break;
+    case 'log':
+    sign.addEventListener('click', log);
+    break;
+    case '<':
+    sign.addEventListener('click', back);
+    break;
+    case '1/x':
+    sign.addEventListener('click', split);
+    break;
+    case 'x²':
+    sign.addEventListener('click', sqrt);
+    break;
+    case '√':
+    sign.addEventListener('click', radic);
+    break;
+    case '+/-':
+    sign.addEventListener('click', plusmin);
+    break;
+    default:
+    sign.addEventListener('click', addElement);
+    break;
+    }
 }
-}
-
 
 function evalResult(){  
   if(isNaN(eval(calc.input.value)) || eval(calc.input.value) == undefined || eval(calc.input.value) == null){
