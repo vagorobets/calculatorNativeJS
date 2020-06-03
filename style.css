@@ -61,4 +61,20 @@
     background-color: rgba(148,187,233, .2);
   }
   
+  @media screen and (max-width: 425px){
+    table {
+      padding: 10px;
+    }
+
+    input.display {
+      height: 40px;
+      font-size: 20px;
+      margin-bottom: 5px;
+  }
   
+    .sign {
+      width: 70px;
+      height: 70px;
+      margin-top: 3px;
+  }
+  }
