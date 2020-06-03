@@ -91,13 +91,19 @@ document.addEventListener('keydown', function(e){
   if(e.code == 'Enter') evalResult();
   if(e.code == 'Backspace') back();
   if(e.code == 'KeyC') everyClear();
-  if(e.code == 'Digit1') addElement(1);
-  if(e.code == 'Digit2') addElement(2);
-  if(e.code == 'Digit3') addElement(3);
-  if(e.code == 'Digit4') addElement(4);
-  if(e.code == 'Digit5') addElement(5);
-  if(e.code == 'Digit6') addElement(6);
-  if(e.code == 'Digit7') addElement(7);
-  if(e.code == 'Digit8') addElement(8);
-  if(e.code == 'Digit9') addElement(9);
+  if(e.key == '0') addElement(0);
+  if(e.key == '1') addElement(1);
+  if(e.key == '2') addElement(2);
+  if(e.key == '3') addElement(3);
+  if(e.key == '4') addElement(4);
+  if(e.key == '5') addElement(5);
+  if(e.key == '6') addElement(6);
+  if(e.key == '7') addElement(7);
+  if(e.key == '8') addElement(8);
+  if(e.key == '9') addElement(9);
+  if(e.key == '+') addElement('+');
+  if(e.key == '-') addElement('-');
+  if(e.key == '/') addElement('/');
+  if(e.key == '*') addElement('*');
+  if(e.key == '.') addElement('.');
 })
